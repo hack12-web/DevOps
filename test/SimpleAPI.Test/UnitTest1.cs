@@ -12,6 +12,12 @@ public class UnitTest1
         Assert.Equal("Claude nyongero",returnValue.Value);
     }
     [Fact]
+    public void GetResults()
+    {
+        var returnValue = controller.Get();
+        Assert.Collection(returnValue.Value);
+    }
+    [Fact]
     public void Test1()
     {
 
